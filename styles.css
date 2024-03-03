@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background: url(https://gradients.mijo-design.com/public/uploads/files/s6.png) no-repeat center / cover;
+    flex-direction: column;
+  }
+  ul{
+    padding: 0;
+  }
+  li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+    &:nth-child(1) button {
+      background: #F3FFBD;
+    }
+    &:nth-child(2) button {
+      background: #247BA0;
+    }
+    &:nth-child(3) button {
+      background: #FF1654;
+    }
+  }
+  button {
+    position: relative;
+    background: rebeccapurple;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid white;
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  img {
+    border-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    position: relative;
+    font-size: 50px;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    list-style-type: none;
+    margin: -5px -5px;
+  }
+
+  .bellowtitle {
+    background-color: rgb(255, 0, 0);
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: transform .2s;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+    animation: wave 2s infinite alternate;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.bellowtitle:hover {
+    transform: rotate(10deg);
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
